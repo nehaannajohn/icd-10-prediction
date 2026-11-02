@@ -1,0 +1,52 @@
+paths:
+  eval_csv: data/eval/Test_Project_ICD10_Dataset.csv
+  eval_clean: data/eval/eval_clean.jsonl
+  eval_labels_long: data/eval/eval_labels_long.csv
+  icd10_dir: data/corpus/fy2025          # populated in the FY2025 download step
+  artifacts_dir: artifacts
+
+split:                                   # transcript-level, never split a transcript's labels
+  seed: 42
+  n_icl: 3
+  n_tune: 10
+  n_heldout: 20
+
+prediction:
+  approach: tree_search
+  tree_search:
+    max_levels: 7                        # chapter → block → category → 4th/5th/6th char → 7th char
+  temperature: 0.7                       # sent only to models that support it (none of the current 4 do)
+  vary_prompt_per_run: true              # permute ICL order + shuffle candidate order per run (seeded)
+  max_output_tokens: 4096
+
+models:                                  # Bedrock model / inference-profile IDs (us-west-2)
+  claude-opus-5-5:   us.anthropic.claude-opus-5-5
+  claude-sonnet-5-5: us.anthropic.claude-sonnet-5-5
+  gpt-6.1-sol:       us.openai.gpt-6.1-sol
+  gpt-6.1-terra:     us.openai.gpt-6.1-terra
+
+llm:
+  max_retries: 2                         # malformed JSON / schema failures; each attempt is traced
+  prompt_cache_models: [claude-opus-5-5, claude-sonnet-5-5]   # explicit Converse cachePoint support, 512-token minimum (Bedrock docs)
+
+uncertainty:
+  n_runs: 3                              # seeds 0, 1, 2 (seed 0 reused from model selection)
+  top_k: 3
+  combo_weighting: [equal, rank, f1]     # ablation: 1/r rank weights vs tune-set F1 weights
+  vote_threshold: 0.5                    # code is predicted if weighted vote ≥ this
+
+evaluation:
+  levels: [chapter, block, category, subcategory_4, subcategory_5, subcategory_6, full_code]
+  selection_metric: [exact_micro_f1, hierarchical_micro_f1]   # rank by exact F1, ties broken by hierarchical F1
+  calibration_bins: 10
+  bootstrap_resamples: 1000              # resampled by transcript
+
+app:
+  models: [claude-opus-5-5, claude-sonnet-5-5, gpt-6.1-terra]   # ranked by tune-set model selection (U2-rank weights 1/rank)
+  seeds: [0, 1, 2]
+  examples:                              # held-out transcripts: strong / mixed / weak U2-rank exact F1
+    - ce1b31b4-b560-436c-bd39-3c2461d4d0ee
+    - d2900a75-9373-4d3a-960a-2c35b15459bd
+    - 1c0ac45e-27fc-42ad-aa49-6fa3f8c80271
+  examples_dir: app/cache/examples
+  heldout_eval_dir: artifacts/uncertainty_eval_heldout_20261101_155219   # metrics shown in "How confidence works"
