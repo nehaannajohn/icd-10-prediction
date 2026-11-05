@@ -1,0 +1,121 @@
+encounter_id,split,code,description
+078c3202-4c40-4ab9-a4b8-8fc74141d13f,heldout,I10,Essential hypertension
+078c3202-4c40-4ab9-a4b8-8fc74141d13f,heldout,M79.605,Pain and swelling of left lower extremity
+078c3202-4c40-4ab9-a4b8-8fc74141d13f,heldout,M79.604,Pain and swelling of right lower extremity
+078c3202-4c40-4ab9-a4b8-8fc74141d13f,heldout,E78.5,"Hyperlipidemia, unspecified hyperlipidemia type"
+078c3202-4c40-4ab9-a4b8-8fc74141d13f,heldout,E66.812,"Obesity, Class II, BMI 35-39.9"
+078c3202-4c40-4ab9-a4b8-8fc74141d13f,heldout,E11.29,"Type 2 diabetes mellitus with other diabetic kidney complication, with long-term current use of insulin"
+078c3202-4c40-4ab9-a4b8-8fc74141d13f,heldout,E61.1,Iron deficiency
+078c3202-4c40-4ab9-a4b8-8fc74141d13f,heldout,E53.8,B12 deficiency
+1c0ac45e-27fc-42ad-aa49-6fa3f8c80271,heldout,D50.9,"Iron deficiency anemia, unspecified iron deficiency anemia type"
+379a8dd6-d793-40fa-bc2c-2603078772f7,heldout,F90.9,"Attention-deficit hyperactivity disorder, unspecified type"
+379a8dd6-d793-40fa-bc2c-2603078772f7,heldout,F91.3,Oppositional defiant disorder
+209fb472-5c51-4482-9703-c2d3b43714ee,heldout,J98.8,Wheezing-associated respiratory infection (WARI)
+209fb472-5c51-4482-9703-c2d3b43714ee,heldout,Z23,Encounter for immunization
+209fb472-5c51-4482-9703-c2d3b43714ee,heldout,J45.990,Exercise-induced RAD (reactive airway disease)
+044d67da-8993-4c1f-8a04-968363cbf904,icl,K29.50,Chronic gastritis without bleeding
+044d67da-8993-4c1f-8a04-968363cbf904,icl,J45.909,"Unspecified asthma, uncomplicated"
+044d67da-8993-4c1f-8a04-968363cbf904,icl,R60.0,Pedal edema
+044d67da-8993-4c1f-8a04-968363cbf904,icl,I83.893,Symptomatic varicose veins of both lower extremities
+044d67da-8993-4c1f-8a04-968363cbf904,icl,K90.49,Fatty food intolerance
+044d67da-8993-4c1f-8a04-968363cbf904,icl,R74.8,Abnormal liver enzymes
+3b69110a-7de7-4e08-aa7b-53de28d51923,tune,F90.2,"ADHD (attention deficit hyperactivity disorder), combined type"
+43c40f19-dabb-4797-b113-18d43e7a5fdd,icl,Z00.129,Encounter for well child examination without abnormal findings
+43c40f19-dabb-4797-b113-18d43e7a5fdd,icl,L72.0,Inclusion cyst
+46b084d1-b2b4-4000-a81b-c408725170a0,heldout,I48.0,Paroxysmal atrial fibrillation
+5dff9666-7e5c-4e6c-a980-9e498001d509,icl,J06.9,Viral URI
+5dff9666-7e5c-4e6c-a980-9e498001d509,icl,H65.01,Acute serous otitis media of right ear without rupture
+5ae13abb-7c78-4b7f-813f-9ad0b4bf9d4d,heldout,S69.90XA,Wrist injury
+5ae13abb-7c78-4b7f-813f-9ad0b4bf9d4d,heldout,Z00.121,Encounter for routine child health examination with abnormal findings
+5ae13abb-7c78-4b7f-813f-9ad0b4bf9d4d,heldout,E23.0,Growth hormone deficiency
+ca13dccb-9bf7-400f-bf8d-0c8f60eb8757,tune,J30.89,Allergic rhinitis due to dust
+ca13dccb-9bf7-400f-bf8d-0c8f60eb8757,tune,B08.1,Molluscum contagiosum
+733cd32a-4561-4ef2-9595-3a796a6a3564,tune,Z09,Hospital discharge follow-up
+733cd32a-4561-4ef2-9595-3a796a6a3564,tune,J01.90,"Acute sinusitis, recurrence not specified, unspecified location"
+733cd32a-4561-4ef2-9595-3a796a6a3564,tune,Z23,Need for influenza vaccination
+c36c6379-7696-4349-b427-395b8ebcf5a0,tune,B08.1,Molluscum contagiosum
+c36c6379-7696-4349-b427-395b8ebcf5a0,tune,Z00.121,Encounter for routine child health examination with abnormal findings
+c36c6379-7696-4349-b427-395b8ebcf5a0,tune,Z23,Encounter for immunization
+c38720eb-3708-4782-9a23-dbba8f4e3156,heldout,F32.81,Premenstrual dysphoric disorder
+d3213665-af66-4ed6-bd29-e4d8a1ab642a,heldout,Z00.00,Annual physical exam
+d3213665-af66-4ed6-bd29-e4d8a1ab642a,heldout,E78.5,"Hyperlipidemia, unspecified hyperlipidemia type"
+d3213665-af66-4ed6-bd29-e4d8a1ab642a,heldout,Z23,Need for shingles vaccine
+d3213665-af66-4ed6-bd29-e4d8a1ab642a,heldout,Z11.3,Encounter for screening for infections with a predominulltly sexual mode of transmission
+c6a540fe-a678-4ff9-9125-649cd47ef8fa,heldout,F32.9,Major depressive disorder
+d0063b10-a546-490a-ad50-fb6fb3347bbe,heldout,F41.1,Generalized anxiety disorder
+d0063b10-a546-490a-ad50-fb6fb3347bbe,heldout,J42,Chronic bronchitis
+98d57afa-9f06-44a6-b1be-bfa5c3438464,heldout,I50.9,Chronic heart failure
+ce1b31b4-b560-436c-bd39-3c2461d4d0ee,heldout,Z13.1,Encounter for screening for diabetes mellitus
+ce1b31b4-b560-436c-bd39-3c2461d4d0ee,heldout,R06.83,Snoring
+ce1b31b4-b560-436c-bd39-3c2461d4d0ee,heldout,R03.0,Elevated blood pressure reading
+ce1b31b4-b560-436c-bd39-3c2461d4d0ee,heldout,Z68.33,"BMI 33.0-33.9,adult"
+ce1b31b4-b560-436c-bd39-3c2461d4d0ee,heldout,R07.89,Xiphoid pain
+ce1b31b4-b560-436c-bd39-3c2461d4d0ee,heldout,L83,Acanthosis
+ce1b31b4-b560-436c-bd39-3c2461d4d0ee,heldout,Z83.3,Family history of diabetes mellitus
+d107ef8a-f26c-4cb6-88b0-af1710e10754,heldout,Z12.11,Encounter for screening for malignullt neoplasm of colon
+d107ef8a-f26c-4cb6-88b0-af1710e10754,heldout,Z13.1,Encounter for screening for diabetes mellitus
+d107ef8a-f26c-4cb6-88b0-af1710e10754,heldout,N90.89,Labial lesion
+d107ef8a-f26c-4cb6-88b0-af1710e10754,heldout,Z00.00,Encounter for general adult medical examination without abnormal findings
+d107ef8a-f26c-4cb6-88b0-af1710e10754,heldout,Z12.4,Encounter for screening for malignullt neoplasm of cervix
+d107ef8a-f26c-4cb6-88b0-af1710e10754,heldout,Z13.6,Encounter for screening for cardiovascular disorders
+c89a8b7b-21ec-4a23-ba1f-5890f43d182e,heldout,I50.812,Chronic right-sided heart failure
+c89a8b7b-21ec-4a23-ba1f-5890f43d182e,heldout,J96.91,Hypoxic respiratory failure
+c89a8b7b-21ec-4a23-ba1f-5890f43d182e,heldout,I89.0,Lymphedema of both lower extremities
+cd05d616-a622-4fae-9a30-b0297198272a,heldout,I10,Essential hypertension
+cd05d616-a622-4fae-9a30-b0297198272a,heldout,E78.5,"Hyperlipidemia, unspecified hyperlipidemia type"
+cd05d616-a622-4fae-9a30-b0297198272a,heldout,I25.10,CAD (coronary artery disease)
+cd05d616-a622-4fae-9a30-b0297198272a,heldout,I73.9,PAD (peripheral artery disease)
+cd05d616-a622-4fae-9a30-b0297198272a,heldout,E11.9,Type 2 diabetes mellitus treated without insulin
+d2900a75-9373-4d3a-960a-2c35b15459bd,heldout,Z00.129,Encounter for routine child health examination without abnormal findings
+d2900a75-9373-4d3a-960a-2c35b15459bd,heldout,Z71.85,Immunization counseling
+efc12644-af06-4cd6-91b3-72c58bbc8c61,tune,I10,Essential hypertension
+efc12644-af06-4cd6-91b3-72c58bbc8c61,tune,E78.5,"Hyperlipidemia, unspecified hyperlipidemia type"
+efc12644-af06-4cd6-91b3-72c58bbc8c61,tune,E55.9,Vitamin D deficiency
+efc12644-af06-4cd6-91b3-72c58bbc8c61,tune,R73.03,Prediabetes
+efc12644-af06-4cd6-91b3-72c58bbc8c61,tune,E07.9,Thyroid disorder
+87d569dc-f231-4ef7-80aa-d46ff58a0e08,tune,J45.909,Asthma
+87d569dc-f231-4ef7-80aa-d46ff58a0e08,tune,J30.2,Seasonal allergies
+87d569dc-f231-4ef7-80aa-d46ff58a0e08,tune,F90.9,ADHD
+87d569dc-f231-4ef7-80aa-d46ff58a0e08,tune,F41.9,Anxiety
+87d569dc-f231-4ef7-80aa-d46ff58a0e08,tune,E66.9,"Obesity, pediatric, BMI greater than or equal to 95th percentile for age"
+87d569dc-f231-4ef7-80aa-d46ff58a0e08,tune,R03.0,Elevated blood pressure reading
+87d569dc-f231-4ef7-80aa-d46ff58a0e08,tune,E78.2,Mixed hyperlipidemia
+87d569dc-f231-4ef7-80aa-d46ff58a0e08,tune,Z00.121,Encounter for routine child health examination with abnormal findings
+fe90f402-fff8-4869-b182-7b7053486750,tune,R10.9,Abdominal discomfort
+fe90f402-fff8-4869-b182-7b7053486750,tune,N95.2,Atrophic vaginitis
+fe90f402-fff8-4869-b182-7b7053486750,tune,E11.9,Diabetes
+fe90f402-fff8-4869-b182-7b7053486750,tune,R30.0,Burning with urination
+fe90f402-fff8-4869-b182-7b7053486750,tune,B37.32,Chronic candidiasis of vulva and vagina
+fe90f402-fff8-4869-b182-7b7053486750,tune,J45.909,Asthma
+fe90f402-fff8-4869-b182-7b7053486750,tune,R42,Lightheadedness
+9e675ee0-ff17-4e15-b177-fbaa528f7bf3,tune,Z00.129,Encounter for well child examination without abnormal findings
+acdd0ef5-c6d2-4f7f-945e-9ba3a0a389e8,tune,E11.9,"Diabetes mellitus, type II, insulin dependent"
+acdd0ef5-c6d2-4f7f-945e-9ba3a0a389e8,tune,I10,Essential hypertension
+acdd0ef5-c6d2-4f7f-945e-9ba3a0a389e8,tune,I50.9,Heart failure
+acdd0ef5-c6d2-4f7f-945e-9ba3a0a389e8,tune,E66.3,Overweight
+711c5436-d4af-4c6e-9b41-4ebee3c4b5ec,heldout,F32.A,Depression with suicidal ideation
+711c5436-d4af-4c6e-9b41-4ebee3c4b5ec,heldout,F41.9,Anxiety
+711c5436-d4af-4c6e-9b41-4ebee3c4b5ec,heldout,R44.0,Auditory hallucinations
+711c5436-d4af-4c6e-9b41-4ebee3c4b5ec,heldout,F43.10,PTSD (post-traumatic stress disorder)
+feec11d1-bfe5-4a01-996a-77a759865178,heldout,L24.A1,Irritant contact dermatitis due to saliva
+feec11d1-bfe5-4a01-996a-77a759865178,heldout,J35.2,Adenoid hypertrophy
+95a5faa9-31a8-43ac-b625-2a431588d4b1,tune,Z00.01,Encounter for general adult medical examination with abnormal findings
+95a5faa9-31a8-43ac-b625-2a431588d4b1,tune,K59.03,Drug-induced constipation
+95a5faa9-31a8-43ac-b625-2a431588d4b1,tune,G47.00,"Insomnia, unspecified type"
+95a5faa9-31a8-43ac-b625-2a431588d4b1,tune,N89.8,Vaginal dryness
+95a5faa9-31a8-43ac-b625-2a431588d4b1,tune,E66.3,Overweight
+95a5faa9-31a8-43ac-b625-2a431588d4b1,tune,N63.10,"Mass of right breast, unspecified quadrant"
+95a5faa9-31a8-43ac-b625-2a431588d4b1,tune,F41.9,Anxiety
+07adb1c0-29df-46bb-8ed6-b719c4081214,heldout,Z00.01,Encounter for well adult exam with abnormal findings
+07adb1c0-29df-46bb-8ed6-b719c4081214,heldout,K82.4,Gallbladder polyp
+07adb1c0-29df-46bb-8ed6-b719c4081214,heldout,M81.0,Age-related osteoporosis without current pathological fracture
+07adb1c0-29df-46bb-8ed6-b719c4081214,heldout,K21.9,Chronic GERD
+07adb1c0-29df-46bb-8ed6-b719c4081214,heldout,Z13.6,Encounter for screening for cardiovascular disorders
+07adb1c0-29df-46bb-8ed6-b719c4081214,heldout,M79.671,Right foot pain
+07adb1c0-29df-46bb-8ed6-b719c4081214,heldout,M54.9,Right-sided back pain
+07adb1c0-29df-46bb-8ed6-b719c4081214,heldout,N95.9,Postmenopausal symptoms
+69792d30-09e2-41d7-be86-4a0ab3ce937c,heldout,I25.10,Coronary artery disease involving native coronary artery of native heart without angina pectoris
+69792d30-09e2-41d7-be86-4a0ab3ce937c,heldout,I10,Essential hypertension
+69792d30-09e2-41d7-be86-4a0ab3ce937c,heldout,I50.32,Heart failure with recovered ejection fraction (HFrecEF)
+69792d30-09e2-41d7-be86-4a0ab3ce937c,heldout,I25.2,History of ST elevation myocardial infarction
+69792d30-09e2-41d7-be86-4a0ab3ce937c,heldout,E78.5,Hyperlipidemia

@@ -5,10 +5,6 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 
-# Take-home dataset (not redistributed; see data/README.md)
-data/eval/*.csv
-data/eval/*.jsonl
-
 # Docs and local tool output
 docs/
 .playwright-mcp/
