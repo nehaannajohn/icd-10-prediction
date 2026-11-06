@@ -48,7 +48,8 @@ def test_main_writes_outputs_sorted_by_e_aurc(patched):
     assert {r["method"] for r in rows} == {"U0", "U1", "U2-eq", "U2-rank", "U2-f1"}
     e = [float(r["e_aurc"]) for r in rows]
     assert e == sorted(e)
-    for f in ("meta.json", "metrics.json", "scores.csv", "risk_coverage_full_code.png", "reliability_full_code.png"):
+    for f in ("meta.json", "metrics.json", "scores.csv", "excess_risk_coverage_full_code.png",
+              "reliability_full_code.png"):
         assert (out / f).exists()
 
 

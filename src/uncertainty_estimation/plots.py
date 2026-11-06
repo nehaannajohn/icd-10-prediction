@@ -23,16 +23,32 @@ def _axes(ax, xlabel, ylabel):
     ax.set_ylabel(ylabel, color=TEXT_2, fontsize=9)
 
 
-def risk_coverage(metrics: dict, methods: list[str], level: str, path) -> None:
+def excess_risk_curve(m: dict) -> tuple[list[float], list[float]]:
+    """Per accepted code k = 1..n (in score order): coverage k/n and risk(k) - best risk(k).
+    risk(k) is the risk of the tie group code k belongs to (tied codes enter together); best risk(k) =
+    max(0, k - n1) / k, the lowest achievable with k codes accepted. The mean of the excess is E-AURC."""
+    n, n1 = m["n"], m["n_correct"]
+    risks, prev = [], 0
+    for p in m["risk_coverage"]:
+        k = round(p["coverage"] * n)
+        risks += [p["risk"]] * (k - prev)
+        prev = k
+    return ([k / n for k in range(1, n + 1)],
+            [r - max(0, k - n1) / k for k, r in enumerate(risks, 1)])
+
+
+def excess_risk_coverage(metrics: dict, methods: list[str], level: str, path) -> None:
     fig, ax = plt.subplots(figsize=(7, 4.5), facecolor=SURFACE)
-    _axes(ax, "Coverage (share of candidate codes auto-accepted)", "Risk (share of accepted codes that are wrong)")
+    _axes(ax, "Coverage (share of candidate codes auto-accepted)",
+          "Excess risk (risk minus best possible risk)")
     for m in methods:
-        rc = metrics[f"{m}|{level}"]["risk_coverage"]
-        ax.step([p["coverage"] for p in rc], [p["risk"] for p in rc], where="post", color=COLOR[m],
-                linestyle=STYLE[m], linewidth=2, label=f'{m}  (E-AURC {metrics[f"{m}|{level}"]["e_aurc"]:.3f})')
+        x, y = excess_risk_curve(metrics[f"{m}|{level}"])
+        ax.step([0] + x, [y[0]] + y, where="pre", color=COLOR[m], linestyle=STYLE[m], linewidth=2,
+                label=f'{m}  (E-AURC {metrics[f"{m}|{level}"]["e_aurc"]:.3f})')
     ax.set_xlim(0, 1.02)
     ax.set_ylim(0, None)
-    ax.set_title(f"Risk–coverage, {level.replace('_', ' ')} (lower is better)", color=TEXT, fontsize=11, loc="left")
+    ax.set_title(f"Excess risk–coverage, {level.replace('_', ' ')} (area = E-AURC, lower is better)",
+                 color=TEXT, fontsize=11, loc="left")
     ax.legend(frameon=False, fontsize=9, labelcolor=TEXT)
     fig.tight_layout()
     fig.savefig(path, dpi=150)

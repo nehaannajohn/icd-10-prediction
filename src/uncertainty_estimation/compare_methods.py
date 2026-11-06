@@ -69,7 +69,7 @@ def main(argv=None):
             w = csv.DictWriter(f, fieldnames=list(data[0]))
             w.writeheader()
             w.writerows(data)
-    plots.risk_coverage(metrics, list(pools), "full_code", out / "risk_coverage_full_code.png")
+    plots.excess_risk_coverage(metrics, list(pools), "full_code", out / "excess_risk_coverage_full_code.png")
     plots.reliability(metrics, list(pools), "full_code", out / "reliability_full_code.png")
 
     print(f"{'method':8} {'cand':>5} {'corr':>5} {'ECE (chance)':>12} {'Brier':>6} {'AUROC':>6} {'AURC':>5} "

@@ -84,7 +84,7 @@ def method_section() -> None:
                        "E-AURC": round(float(r["e_aurc"]), 3), "Brier": round(float(r["brier"]), 3),
                        "predicted-set exact F1": round(float(r["pred_exact_f1"]), 2)} for r in rows],
                      hide_index=True)
-        st.image(str(d / "risk_coverage_full_code.png"))
+        st.image(str(d / "excess_risk_coverage_full_code.png"))
 
 
 st.title("ICD-10-CM coding with confidence")

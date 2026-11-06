@@ -62,7 +62,7 @@ test/                     unit tests mirroring src/ and app/ (Bedrock tests mark
 artifacts/                results (only these summary folders are committed)
   model_selection_20261101_131756/            model ranking on tune: ranking.json, ranking.csv
   uncertainty_eval_tune_20261101_152756/      confidence methods on tune: methods.csv, metrics.json,
-                                              reliability + risk–coverage plots
+                                              reliability + excess risk–coverage (E-AURC) plots
   uncertainty_eval_heldout_20261101_155219/   confidence methods on held-out (same files)
   <stage>_<model>_<ts>/                       per-run outputs + traces (created locally, git-ignored)
 config.yaml               paths, models, split, prediction, uncertainty, evaluation, app settings
