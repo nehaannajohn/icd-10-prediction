@@ -32,8 +32,6 @@ CSS = """
 .icd .divider { display: flex; align-items: center; gap: .75rem; margin: .5rem 0; font-size: 11px; font-weight: 600;
                 letter-spacing: .06em; text-transform: uppercase; color: #64748b; }
 .icd .divider::before, .icd .divider::after { content: ""; flex: 1; border-top: 1px dashed #cbd5e1; }
-.icd .chap { display: grid; grid-template-columns: 1fr 200px 44px; gap: .75rem; align-items: center;
-             font-size: 13px; padding: .3rem 0; }
 </style>
 """
 
@@ -117,13 +115,6 @@ def missed_card(result: dict) -> str:
             f'<div class="muted">These carry no confidence score: the ensemble never proposed them.</div>{rows}</div>')
 
 
-def chapters_card(result: dict) -> str:
-    rows = "".join(f'<div class="chap"><div>{escape(ch["description"])}</div>'
-                   f'<div class="bar"><span style="width:{ch["agreement"] * 100:.0f}%;background:#2563eb"></span></div>'
-                   f'<div class="pct">{ch["agreement"]:.0%}</div></div>' for ch in result["chapters"])
-    return f'<div class="card"><div class="eyebrow">Agreement by chapter</div>{rows}</div>'
-
-
 def page(result: dict, seconds: float | None = None) -> str:
     return (CSS + '<div class="icd">' + summary_card(result, seconds) + codes_card(result) + missed_card(result)
-            + chapters_card(result) + "</div>")
+            + "</div>")
